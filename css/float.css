@@ -1,0 +1,35 @@
+header,nav,main,footer{
+    box-sizing: border-box;
+}
+
+header{
+    width:100%;
+}
+
+nav{
+    width: 300px;
+    float:left;
+    height: 100px;
+}
+
+main{
+    width: calc(100% - 300px);
+    float:right;
+    height: 100px;
+}
+
+footer{
+    clear: both;
+    width:100%;
+}
+
+@media only screen and (max-width: 640px) {
+    nav, main{
+        width: auto;
+        float: none;
+    }
+
+    nav{
+        height: auto;
+    }
+}

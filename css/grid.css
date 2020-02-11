@@ -1,0 +1,42 @@
+header,nav,main,footer{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 300px minmax(0px, 100%);
+    grid-template-areas:
+    'header header'
+    'nav main'
+    'footer footer';
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+    height: 100px;
+    width: 300px;
+}
+
+main{
+    grid-area: main;
+    height: 100px;
+}
+
+footer{
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 640px) {
+    body{
+        display: block;
+    }
+
+    nav{
+        height: auto;
+        width: auto;
+    }
+}
